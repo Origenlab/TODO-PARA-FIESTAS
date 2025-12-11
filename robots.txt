@@ -1,0 +1,32 @@
+# Robots.txt para Todo Para Fiestas
+# https://todoparafiestas.mx
+
+# Permitir todos los crawlers
+User-agent: *
+
+# Directorios a excluir
+Disallow: /.audit/
+Disallow: /js/
+Disallow: /node_modules/
+
+# Permitir CSS para renderizado
+Allow: /css/
+
+# Sitemap
+Sitemap: https://todoparafiestas.mx/sitemap.xml
+
+# Crawl-delay para ser amigable con el servidor
+Crawl-delay: 1
+
+# Google específico
+User-agent: Googlebot
+Allow: /
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
